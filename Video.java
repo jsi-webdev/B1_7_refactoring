@@ -70,4 +70,13 @@ public class Video {
 	public void setVideoType(int videoType) {
 		this.videoType = videoType;
 	}
+
+	int getLimitByVideoType(int limit) {
+		switch ( videoType ) {
+			case VHS: limit = 5 ; break ;
+			case CD: limit = 3 ; break ;
+			case DVD: limit = 2 ; break ;
+		}
+		return limit;
+	}
 }
