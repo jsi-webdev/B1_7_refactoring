@@ -69,4 +69,7 @@ public class Rental {
 		return video.getPriceCode();
 	}
 
+	int getVideoPriceCode() {
+		return getVideo().getPriceCode();
+	}
 }

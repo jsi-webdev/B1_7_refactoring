@@ -22,7 +22,7 @@ public class VRLogic {
                     "\tRentals: " + foundCustomer.getRentals().size());
             for (Rental rental : foundCustomer.getRentals()) {
                 System.out.print("\tTitle: " + rental.getRentalTitle() + " ");
-                System.out.print("\tPrice Code: " + rental.getVideo().getPriceCode());
+                System.out.print("\tPrice Code: " + rental.getVideoPriceCode());
             }
 
             List<Rental> rentals = new ArrayList<Rental>();
