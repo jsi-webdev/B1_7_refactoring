@@ -4,13 +4,8 @@ public class Video {
 	private String title ;
 
 	private int priceCode ;
-	public static final int REGULAR = 1 ;
-	public static final int NEW_RELEASE =2 ;
 
 	private int videoType ;
-	public static final int VHS = 1 ;
-	public static final int CD = 2 ;
-	public static final int DVD = 3 ;
 
 	private Date registeredDate ;
 	private boolean rented ;
@@ -25,9 +20,9 @@ public class Video {
 	public int getLateReturnPointPenalty() {
 		int pentalty = 0 ;
 		switch ( videoType ) {
-			case VHS: pentalty = 1 ; break ;
-			case CD: pentalty = 2 ; break ;
-			case DVD: pentalty = 3 ; break ;
+			case VideoEnum.VHS: pentalty = 1 ; break ;
+			case VideoEnum.CD: pentalty = 2 ; break ;
+			case VideoEnum.DVD: pentalty = 3 ; break ;
 		}
 		return pentalty ;
 	}
@@ -61,9 +56,9 @@ public class Video {
 
 	int getLimitByVideoType(int limit) {
 		switch ( videoType ) {
-			case VHS: limit = 5 ; break ;
-			case CD: limit = 3 ; break ;
-			case DVD: limit = 2 ; break ;
+			case VideoEnum.VHS: limit = 5 ; break ;
+			case VideoEnum.CD: limit = 3 ; break ;
+			case VideoEnum.DVD: limit = 2 ; break ;
 		}
 		return limit;
 	}

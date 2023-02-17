@@ -116,8 +116,8 @@ public class VRLogic {
         customerManager.customers.add(james) ;
         customerManager.customers.add(brown) ;
 
-        Video v1 = new Video("v1", Video.CD, Video.REGULAR, new Date()) ;
-        Video v2 = new Video("v2", Video.DVD, Video.NEW_RELEASE, new Date()) ;
+        Video v1 = new Video("v1", VideoEnum.CD, VideoEnum.REGULAR, new Date()) ;
+        Video v2 = new Video("v2", VideoEnum.DVD, VideoEnum.NEW_RELEASE, new Date()) ;
         videoManager.videos.add(v1) ;
         videoManager.videos.add(v2) ;
 
