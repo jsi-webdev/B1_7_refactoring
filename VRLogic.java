@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class VRLogic {
     final CustomerManager customerManager = new CustomerManager();
     final VideoManager videoManager = new VideoManager();
-    static Scanner scanner;
+    private static Scanner scanner = new Scanner(System.in);
     public VRLogic() {
     }
 
