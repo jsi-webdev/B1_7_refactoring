@@ -77,4 +77,8 @@ public class Rental {
 	void setRented() {
 		video.setRented(false);
 	}
+
+	int getPriceCode() {
+		return video.getPriceCode();
+	}
 }

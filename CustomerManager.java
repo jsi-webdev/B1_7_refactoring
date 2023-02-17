@@ -12,10 +12,10 @@ public class CustomerManager {
         System.out.println("List of customers");
         for (Customer customer : customers) {
             System.out.println("Name: " + customer.getName() +
-                    "\tRentals: " + customer.getRentals().size());
+                    "\tRentals: " + customer.getRentalCount());
             for (Rental rental : customer.getRentals()) {
-                System.out.print("\tTitle: " + rental.getVideo().getTitle() + " ");
-                System.out.print("\tPrice Code: " + rental.getVideo().getPriceCode());
+                System.out.print("\tTitle: " + rental.getRentalTitle() + " ");
+                System.out.print("\tPrice Code: " + rental.getPriceCode());
             }
         }
         System.out.println("End of list");

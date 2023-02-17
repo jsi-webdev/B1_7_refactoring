@@ -93,4 +93,7 @@ public class Customer {
 	}
 
 
+	int getRentalCount() {
+		return rentals.size();
+	}
 }
