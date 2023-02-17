@@ -69,4 +69,12 @@ public class Rental {
 	String getRentalTitle() {
 		return video.getTitle();
 	}
+
+	boolean isRented() {
+		return video.isRented();
+	}
+
+	void setRented() {
+		video.setRented(false);
+	}
 }

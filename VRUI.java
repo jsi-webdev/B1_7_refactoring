@@ -68,9 +68,9 @@ public class VRUI {
 
 		List<Rental> customerRentals = foundCustomer.getRentals() ;
 		for ( Rental rental: customerRentals ) {
-			if ( rental.getRentalTitle().equals(videoTitle) && rental.getVideo().isRented() ) {
+			if ( rental.getRentalTitle().equals(videoTitle) && rental.isRented()) {
 				rental.returnVideo();
-				rental.getVideo().setRented(false);
+				rental.setRented();
 				break ;
 			}
 		}
