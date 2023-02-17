@@ -40,4 +40,11 @@ public class CustomerManager {
             System.out.println(result);
         }
     }
+
+    void registerCustomer() {
+        System.out.println("Enter customer name: ") ;
+        String name = scanner.next();
+        Customer customer = new Customer(name) ;
+        customers.add(customer) ;
+    }
 }
