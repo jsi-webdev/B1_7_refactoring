@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -20,7 +21,7 @@ public class Customer {
 	}
 
 	public List<Rental> getRentals() {
-		return rentals;
+		return Collections.unmodifiableList(rentals);
 	}
 
 	public void setRentals(List<Rental> rentals) {
@@ -29,7 +30,6 @@ public class Customer {
 
 	public void addRental(Rental rental) {
 		rentals.add(rental);
-
 	}
 
 	public String getReport() {
@@ -91,4 +91,6 @@ public class Customer {
 		}
 		return result ;
 	}
+
+
 }
