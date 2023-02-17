@@ -65,4 +65,8 @@ public class Rental {
 		}
 		return limit ;
 	}
+
+	String getRentalTitle() {
+		return video.getTitle();
+	}
 }
